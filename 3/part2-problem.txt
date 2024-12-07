@@ -1,0 +1,13 @@
+these are getting added when they shouldn't be:
+395: multiplying 998 and 507
+sum_of_multiply: 90544261
+396: multiplying 975 and 828
+sum_of_multiply: 91351561
+397: multiplying 257 and 31
+sum_of_multiply: 91359528
+398: multiplying 472 and 279
+sum_of_multiply: 91491216
+399: multiplying 13 and 39
+sum_of_multiply: 91491723
+
+they are after don't()
