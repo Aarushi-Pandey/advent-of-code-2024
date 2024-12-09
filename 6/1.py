@@ -1,4 +1,4 @@
-input_file = open("./eg-input.txt")
+input_file = open("./input.txt")
 f = open("./debug-path.txt", "w")
 input_arr = []
 
@@ -26,8 +26,8 @@ path_count = 1
 # out_of_maze_condition = going up and i == 0 or going down and i == len(input_arr) or going left and j == 0 or going right and j == len(input_arr[i])
 # obstacle condition = arr[i][j] == '#'
 
-#print(len(input_arr)-1)
-#print(len(input_arr[0])-1)
+print(len(input_arr)-1)
+print(len(input_arr[0])-1)
 
 input_arr[current_i] = input_arr[current_i][:current_j] + 'X' + input_arr[current_i][current_j+1:]
 
