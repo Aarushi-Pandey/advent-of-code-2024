@@ -1,4 +1,4 @@
-input_file = open("./input.txt")
+input_file = open("./eg-input.txt")
 f = open("./debug-path.txt", "w")
 input_arr = []
 
