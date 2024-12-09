@@ -1,4 +1,4 @@
-input_file = open("./input.txt")
+input_file = open("./eg-input.txt")
 f = open("./debug-path.txt", "w")
 input_arr = []
 
@@ -29,7 +29,10 @@ path_count = 1
 #print(len(input_arr)-1)
 #print(len(input_arr[0])-1)
 
-while not ((current_direction == "up" and current_i == 0) or (current_direction == "down" and current_i == len(input_arr)-1) or (current_direction == "left" and current_j == 0) or (current_direction == "right" and current_j == len(input_arr[0])-1)):
+input_arr[current_i] = input_arr[current_i][:current_j] + 'X' + input_arr[current_i][current_j+1:]
+
+
+while not (current_i == 0 or current_i == len(input_arr)-1 or current_j == 0 or current_j == len(input_arr[0])-1):
     #print(f"{current_i}, {current_j} in {current_direction}")
     f.write(f"{current_i}, {current_j} in {current_direction}\n")
     if current_direction == "up":
@@ -40,7 +43,7 @@ while not ((current_direction == "up" and current_i == 0) or (current_direction 
         else:
             current_i -= 1
             if input_arr[current_i][current_j] != 'X':
-                input_arr[current_i] = input_arr[current_i][:j] + 'X' + input_arr[current_i][j+1:]
+                input_arr[current_i] = input_arr[current_i][:current_j] + 'X' + input_arr[current_i][current_j+1:]
                 path_count += 1
     elif current_direction == "down":
         if input_arr[current_i+1][current_j] == '#': #obstacle
@@ -50,7 +53,7 @@ while not ((current_direction == "up" and current_i == 0) or (current_direction 
         else:
             current_i += 1
             if input_arr[current_i][current_j] != 'X':
-                input_arr[current_i] = input_arr[current_i][:j] + 'X' + input_arr[current_i][j+1:]
+                input_arr[current_i] = input_arr[current_i][:current_j] + 'X' + input_arr[current_i][current_j+1:]
                 path_count += 1
     elif current_direction == "left":
         if input_arr[current_i][current_j-1] == '#': #obstacle
@@ -60,7 +63,7 @@ while not ((current_direction == "up" and current_i == 0) or (current_direction 
         else:
             current_j -= 1
             if input_arr[current_i][current_j] != 'X':
-                input_arr[current_i] = input_arr[current_i][:j] + 'X' + input_arr[current_i][j+1:]
+                input_arr[current_i] = input_arr[current_i][:current_j] + 'X' + input_arr[current_i][current_j+1:]
                 path_count += 1
     else:
         if input_arr[current_i][current_j+1] == '#': #obstacle
@@ -70,9 +73,13 @@ while not ((current_direction == "up" and current_i == 0) or (current_direction 
         else:
             current_j += 1
             if input_arr[current_i][current_j] != 'X':
-                input_arr[current_i] = input_arr[current_i][:j] + 'X' + input_arr[current_i][j+1:]
+                input_arr[current_i] = input_arr[current_i][:current_j] + 'X' + input_arr[current_i][current_j+1:]
                 path_count += 1
+    f.write(f"{path_count}\n")
     #print(path_count)
+
+for line in input_arr:
+    f.write(f"{line}\n")
 
 print(path_count)
 
