@@ -25,6 +25,7 @@ current_direction = first_dir
 
 infinite_loop_count = 0
 
+
 # keep going in current direction until obstacle encountered or out of range
 # out_of_maze_condition = going up and i == 0 or going down and i == len(input_arr) or going left and j == 0 or going right and j == len(input_arr[i])
 # obstacle condition = arr[i][j] == '#'
