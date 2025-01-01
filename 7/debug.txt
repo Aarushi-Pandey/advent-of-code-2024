@@ -1,0 +1,74 @@
+aarushi@Aarushi-MacBook-Air 7 % python3 2.py
+[10, 19]
+len: 1 for [19], i:0
+10 + 19 = 1019 for [19]
+result is good: 190
+[81, 40, 27]
+len: 2 for [40, 27], i:0
+81 + 40 = 8140 for [40, 27]
+len: 1 for [27], i:1
+result is good: 3267
+[17, 5]
+len: 1 for [5], i:0
+17 + 5 = 175 for [5]
+[15, 6]
+len: 1 for [6], i:0
+15 + 6 = 156 for [6]
+result is good: 156
+
+[6, 8, 6, 15]
+len: 3 for [8, 6, 15], i:0
+6 + 8 = 68 for [8, 6, 15]
+len: 2 for [6, 15], i:1
+6 + 15 = 615 for [6, 15]
+len: 1 for [15], i:2
+len: 1 for [15], i:2
+len: 2 for [6, 15], i:1
+6 + 15 = 615 for [6, 15]
+len: 1 for [15], i:2
+len: 1 for [15], i:2
+len: 2 for [6, 15], i:1
+6 + 15 = 615 for [6, 15]
+len: 1 for [15], i:2
+len: 1 for [15], i:2
+
+[16, 10, 13]
+len: 2 for [10, 13], i:0
+16 + 10 = 1610 for [10, 13]
+len: 1 for [13], i:1
+len: 1 for [13], i:1
+len: 1 for [13], i:1
+[17, 8, 14]
+len: 2 for [8, 14], i:0
+17 + 8 = 178 for [8, 14]
+len: 1 for [14], i:1
+len: 1 for [14], i:1
+len: 1 for [14], i:1
+result is good: 192
+[9, 7, 18, 13]
+len: 3 for [7, 18, 13], i:0
+9 + 7 = 97 for [7, 18, 13]
+len: 2 for [18, 13], i:1
+18 + 13 = 1813 for [18, 13]
+len: 1 for [13], i:2
+len: 1 for [13], i:2
+len: 2 for [18, 13], i:1
+18 + 13 = 1813 for [18, 13]
+len: 1 for [13], i:2
+len: 1 for [13], i:2
+len: 2 for [18, 13], i:1
+18 + 13 = 1813 for [18, 13]
+len: 1 for [13], i:2
+len: 1 for [13], i:2
+[11, 6, 16, 20]
+len: 3 for [6, 16, 20], i:0
+11 + 6 = 116 for [6, 16, 20]
+len: 2 for [16, 20], i:1
+16 + 20 = 1620 for [16, 20]
+len: 1 for [20], i:2
+len: 1 for [20], i:2
+len: 2 for [16, 20], i:1
+16 + 20 = 1620 for [16, 20]
+len: 1 for [20], i:2
+result is good: 292
+4097
